@@ -1,0 +1,46 @@
+---
+layout: post
+title: "Creating desktop wallpapers from photo albums"
+subtitle: ""
+date: 2020-11-07 13:03:13 -0100
+background: '/img/posts/post-02/bg-post-02.jpg'
+---
+
+<p>When travelling, I enjoy taking photos. I don't have the most photographic memory, so it really helps me to revisit some of my best memories. This has led to a large album of my favourite travel photos, hidden in depths of my hard drive and rarely looked at.</p>
+
+<p>Due to the COVID-19 travel ban, revisiting these memories has become much more important; my travel bug is constantly itching! Using my favourites album as desktop wallpapers helps scratch that itch, being greeted by a different memory every time I log on to my PC. </p>
+
+<p>Perfect; Windows has a wallpaper slideshow option that allows you to rotate through an album with a specified frequency. However, the image fit options are less than ideal: "fill", "centre", "stretch", "tile" and "span". Occasionally an option suits, but as image dimensions vary it's rarely one size fits all, leading to cropped or stretched images; not great!</p> 
+
+<p>The final option, "Fit", offers the best middle ground, leaving the photo itself unaltered, but adding large black bars around the perimeter of the image. We can do better than this!</p>
+
+<h2 class="section-heading">Blurpapers</h2>
+
+<p>To solve this, I created Blurpapers <a href="https://github.com/anqus/blurpapers">(Github)</a>, which aims to improve the appearance of centred photo wallpapers. By adding a blur effect around the outside, it removes the black bars, replacing them with colours that are more easy on the eye. It resizes images to the resolution of your primary monitor, and iterates over an entire album (directory). It adds blur horizontally or vertically around the centered image, depending on its aspect ratio.</p>
+
+<p>I think this looks much better. Let me know in the comments if you have any success using the code yourself, or if you have any feedback!</p> 
+
+<img class="img-fluid" src="/img/posts/post-02/il-post-02-before1.png">
+<span class="caption text-muted">Before - 3:4 image</span>
+<p></p>
+
+<img class="img-fluid" src="/img/posts/post-02/il-post-02-after1.png">
+<span class="caption text-muted">After - 3:4 image</span>
+<p></p>
+
+<img class="img-fluid" src="/img/posts/post-02/il-post-02-before2.png">
+<span class="caption text-muted">Before - 16:9 image</span>
+<p></p>
+
+<img class="img-fluid" src="/img/posts/post-02/il-post-02-after2.png">
+<span class="caption text-muted">After - 16:9 image</span>
+<p></p>
+
+<img class="img-fluid" src="/img/posts/post-02/il-post-02-before3.png">
+<span class="caption text-muted">Before - 4:3 image</span>
+<p></p>
+
+<img class="img-fluid" src="/img/posts/post-02/il-post-02-after3.png">
+<span class="caption text-muted">After - 4:3 image</span>
+<p></p>
+
