@@ -6,17 +6,23 @@ date: 2020-11-07 13:03:13 -0100
 background: '/img/posts/post-02/bg-post-02.jpg'
 ---
 
-<p>When travelling, I enjoy taking photos. I don't have the most photographic memory, so it really helps me to revisit some of my best memories. This has led to a large album of my favourite travel photos, hidden in depths of my hard drive and rarely looked at.</p>
+<p>When travelling, I enjoy taking photos. I don't have the most photographic memory, so it really helps me to revisit some of my best memories. This has led to a large album of my favourite travel photos, hidden in the depths of my hard drive and rarely looked at.</p>
 
 <p>Due to the COVID-19 travel ban, revisiting these memories has become much more important; my travel bug is constantly itching! Using my favourites album as desktop wallpapers helps scratch that itch, being greeted by a different memory every time I log on to my PC. </p>
 
-<p>Perfect; Windows has a wallpaper slideshow option that allows you to rotate through an album with a specified frequency. However, the image fit options are less than ideal: "fill", "centre", "stretch", "tile" and "span". Occasionally an option suits, but as image dimensions vary it's rarely one size fits all, leading to cropped or stretched images; not great!</p> 
+<p>Perfect; Windows has a wallpaper slideshow option that allows you to rotate through an album with a specified frequency. However, the image fit options are less than ideal: </p>
 
-<p>The final option, "Fit", offers the best middle ground, leaving the photo itself unaltered, but adding large black bars around the perimeter of the image. We can do better than this!</p>
+<p><center><b>Fill, Centre, Stretch, Tile, Span and Fit.</b></center></p>
+
+<p>Occasionally an option suits, but as image dimensions vary it's rarely one size fits all. This leads to cropped or stretched images; not great!</p> 
+
+<p>The final option, fit, offers the best middle ground, leaving the photo itself unaltered, but adding large black bars around the perimeter of the image. We can do better than this!</p>
 
 <h2 class="section-heading">Blurpapers</h2>
 
-<p>To solve this, I created Blurpapers <a href="https://github.com/anqus/blurpapers">(Github)</a>, which aims to improve the appearance of centred photo wallpapers. By adding a blur effect around the outside, it removes the black bars, replacing them with colours that are more easy on the eye. It resizes images to the resolution of your primary monitor, and iterates over an entire album (directory). It adds blur horizontally or vertically around the centered image, depending on its aspect ratio.</p>
+<p>To solve this, I wrote couple of functions in Python, which aim to improve the appearance of centred photo wallpapers. It uses OpenCV to reshape an image to the size of your primary monitor, add a Gaussian blur filter, then overlay this with the original, centered image. This process removes the black bars, replacing them with colours that are more easy on the eye. It adds blur horizontally or vertically around the centered image, depending on its aspect ratio.</p>
+
+<p><center><b><u><a href="https://github.com/anqus/blurpapers">You can find the Blurpapers repo on Github here.</a></u></center></b></p>
 
 <p>I think this looks much better. Let me know in the comments if you have any success using the code yourself, or if you have any feedback!</p> 
 
